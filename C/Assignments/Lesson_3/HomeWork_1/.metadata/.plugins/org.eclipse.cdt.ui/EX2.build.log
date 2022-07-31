@@ -1,1 +1,7 @@
-Info: Nothing to build for EX2
+07:18:45 **** Rebuild of configuration Debug for project EX2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex2.o "..\\ex2.c" 
+gcc -o EX2.exe ex2.o 
+
+07:18:46 Build Finished (took 309ms)
+

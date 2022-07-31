@@ -1,0 +1,17 @@
+/*
+ * ex6.c
+ *
+ *  Created on: Jul 27, 2022
+ *      Author: Mohamed Shaban
+ */
+
+#include <stdio.h>
+
+int main(void)
+{
+	int num;
+	printf ("Enter the integer number: ");
+	fflush(stdout);		fflush(stdin);
+	scanf("%d",&num);
+
+}

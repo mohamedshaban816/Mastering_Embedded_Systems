@@ -1,0 +1,14 @@
+/*
+ * ex6.c
+ *
+ *  Created on: Jul 27, 2022
+ *      Author: Mohamed Shaban
+ */
+
+#include <stdio.h>
+
+int main(void)
+{
+	fflush(stdout);			fflush(stdin);
+	return 0;
+}

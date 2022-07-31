@@ -1,0 +1,18 @@
+/*
+ * ex7.c
+ *
+ *  Created on: Jul 25, 2022
+ *      Author: Mohamed Shaban
+ */
+
+
+#include <stdio.h>
+
+int main(void)
+{
+
+
+
+
+	return 0;
+}
