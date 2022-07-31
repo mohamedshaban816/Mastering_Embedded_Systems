@@ -1,0 +1,25 @@
+/*
+ * ex1.c
+ *
+ *  Created on: Jul 31, 2022
+ *      Author: Mohamed Shaban
+ */
+
+#include <stdio.h>
+
+int main(void)
+{
+	float arr1[2][2];
+	float arr2[2][2];
+	int i,j;
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			printf("Enter the element %d%d",i,j);
+			fflush(stdout);		fflush(stdin);
+		}
+
+	}
+	return 0;
+}
