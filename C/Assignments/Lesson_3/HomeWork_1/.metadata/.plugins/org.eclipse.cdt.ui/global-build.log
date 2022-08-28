@@ -3,3 +3,16 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex7.o "..\\ex7.c" 
 gcc -o EX7.exe ex7.o 
 Info: Nothing to build for EX7
+Info: Nothing to build for EX1
+Info: Nothing to build for EX2
+Info: Nothing to build for EX3
+Info: Nothing to build for EX4
+Info: Nothing to build for EX5
+23:15:03 **** Incremental Build of configuration Debug for project EX6 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex6.o "..\\ex6.c" 
+gcc -o EX6.exe ex6.o 
+Info: Nothing to build for EX7
+Info: Nothing to build for EX1
+Info: Nothing to build for EX6
+Info: Nothing to build for EX1
