@@ -1,0 +1,50 @@
+22:04:16 **** Build of configuration Debug for project Toggle_Led_STM ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "Toggle_Led_STM.elf" @"objects.list"   -mcpu=cortex-m3 -T"F:\Embedded_Diploma\github_Repo\Mastering_Embedded_Systems_Diploma\Embedded_C\Assignment_1\Toggle_Led_STM\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Toggle_Led_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: cannot open output file Toggle_Led_STM.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:69: Toggle_Led_STM.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:04:47 **** Incremental Build of configuration Debug for project Toggle_Led_STM ****
+make -j8 all 
+arm-none-eabi-gcc -o "Toggle_Led_STM.elf" @"objects.list"   -mcpu=cortex-m3 -T"F:\Embedded_Diploma\github_Repo\Mastering_Embedded_Systems_Diploma\Embedded_C\Assignment_1\Toggle_Led_STM\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Toggle_Led_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: cannot open output file Toggle_Led_STM.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:63: Toggle_Led_STM.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:05:36 **** Incremental Build of configuration Debug for project Toggle_Led_STM ****
+make -j8 all 
+arm-none-eabi-gcc -o "Toggle_Led_STM.elf" @"objects.list"   -mcpu=cortex-m3 -T"F:\Embedded_Diploma\github_Repo\Mastering_Embedded_Systems_Diploma\Embedded_C\Assignment_1\Toggle_Led_STM\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Toggle_Led_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Toggle_Led_STM.elf
+ 
+arm-none-eabi-size   Toggle_Led_STM.elf 
+arm-none-eabi-objdump -h -S  Toggle_Led_STM.elf  > "Toggle_Led_STM.list"
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	Toggle_Led_STM.elf
+Finished building: default.size.stdout
+ 
+Finished building: Toggle_Led_STM.list
+ 
+22:06:36 **** Incremental Build of configuration Debug for project Toggle_Led_STM ****
+make -j8 all 
+arm-none-eabi-gcc -o "Toggle_Led_STM.elf" @"objects.list"   -mcpu=cortex-m3 -T"F:\Embedded_Diploma\github_Repo\Mastering_Embedded_Systems_Diploma\Embedded_C\Assignment_1\Toggle_Led_STM\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Toggle_Led_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Toggle_Led_STM.elf
+ 
+arm-none-eabi-size   Toggle_Led_STM.elf 
+arm-none-eabi-objdump -h -S  Toggle_Led_STM.elf  > "Toggle_Led_STM.list"
+arm-none-eabi-objcopy  -O ihex  Toggle_Led_STM.elf  "Toggle_Led_STM.hex"
+arm-none-eabi-objcopy  -O binary  Toggle_Led_STM.elf  "Toggle_Led_STM.bin"
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	Toggle_Led_STM.elf
+Finished building: default.size.stdout
+ 
+Finished building: Toggle_Led_STM.list
+ 
+Finished building: Toggle_Led_STM.hex
+Finished building: Toggle_Led_STM.bin
+ 
+ 

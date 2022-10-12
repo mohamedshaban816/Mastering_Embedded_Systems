@@ -1,0 +1,22 @@
+22:06:36 **** Incremental Build of configuration Debug for project Toggle_Led_STM ****
+make -j8 all 
+arm-none-eabi-gcc -o "Toggle_Led_STM.elf" @"objects.list"   -mcpu=cortex-m3 -T"F:\Embedded_Diploma\github_Repo\Mastering_Embedded_Systems_Diploma\Embedded_C\Assignment_1\Toggle_Led_STM\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Toggle_Led_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Toggle_Led_STM.elf
+ 
+arm-none-eabi-size   Toggle_Led_STM.elf 
+arm-none-eabi-objdump -h -S  Toggle_Led_STM.elf  > "Toggle_Led_STM.list"
+arm-none-eabi-objcopy  -O ihex  Toggle_Led_STM.elf  "Toggle_Led_STM.hex"
+arm-none-eabi-objcopy  -O binary  Toggle_Led_STM.elf  "Toggle_Led_STM.bin"
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	Toggle_Led_STM.elf
+Finished building: default.size.stdout
+ 
+Finished building: Toggle_Led_STM.list
+ 
+Finished building: Toggle_Led_STM.hex
+Finished building: Toggle_Led_STM.bin
+ 
+ 
+
+22:06:36 Build Finished. 0 errors, 0 warnings. (took 293ms)
+
